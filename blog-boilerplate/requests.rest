@@ -1,0 +1,27 @@
+@baseUrlPosts = http://localhost:4000
+@baseUrlComments = http://localhost:4001/posts
+
+### Get posts
+# @name post
+GET {{baseUrlPosts}}/posts
+
+### Create post
+POST {{baseUrlPosts}}/posts
+Content-Type: application/json
+
+{
+  "title": "First Post"
+}
+
+@postId = {{post.response.body.*}}
+
+### Get comments of post
+GET {{baseUrlComments}}/{{postId}}/comments
+
+### Create comment for post
+POST {{baseUrlComments}}/{{postId}}/comments
+Content-Type: application/json
+
+{
+  "content": "Second comment comment"
+}

@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:4001/posts
+
+### Get comments of post
+GET {{baseUrl}}/:id/comments
+
+### Create post
+POST {{baseUrl}}/:id/comments
+Content-Type: application/json
+
+{
+  "content": "First comment"
+}

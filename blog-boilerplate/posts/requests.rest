@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:4000
+
+### Get posts
+GET {{baseUrl}}/posts
+
+### Create post
+POST {{baseUrl}}/posts
+Content-Type: application/json
+
+{
+  "title": "First Post"
+}
