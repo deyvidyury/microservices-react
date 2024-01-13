@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from "react";
 
-const CommentCreate = ({ postId, setFetchComments }) => {
+const CommentCreate = ({ postId }) => {
   const [content, setContent] = useState('');
 
   const onSumit = async (e) => {
@@ -10,7 +10,6 @@ const CommentCreate = ({ postId, setFetchComments }) => {
       content
     });
     setContent('');
-    setFetchComments(true);
   };
   return <div>
     <form onSubmit={onSumit}>
