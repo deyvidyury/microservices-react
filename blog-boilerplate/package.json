@@ -4,7 +4,9 @@
   "description": "",
   "main": "notes.js",
   "scripts": {
-    "install": "./install.sh"
+    "install": "./install.sh",
+    "build:docker:win": "bash dockerbuild.sh",
+    "start:docker:win": "bash dockerrun.sh"
   },
   "keywords": [],
   "author": "",

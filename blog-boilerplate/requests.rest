@@ -6,8 +6,8 @@
 GET {{baseUrlPosts}}/posts
 
 ### Create post
-POST {{baseUrlPosts}}/posts
-Content-Type: application/json
+POST {{baseUrlPosts}}/posts HTTP/1.1
+Content-Type: "application/json"
 
 {
   "title": "First Post"
